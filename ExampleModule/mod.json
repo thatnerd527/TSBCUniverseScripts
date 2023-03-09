@@ -1,6 +1,6 @@
 {
   "name": "ExampleModule",
-  "type": "clientscript",
+  "type": "serverscript",
   "path": "main.lua",
   "children": [
     {

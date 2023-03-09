@@ -7,9 +7,9 @@
       "name": "script1",
       "type": "serverscript",
       "path": "flatname.lua",
-      "children": {
+      "children": [
         
-      }
+      ]
     },
   ]
 }

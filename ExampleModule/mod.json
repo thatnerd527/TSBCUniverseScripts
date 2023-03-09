@@ -1,20 +1,15 @@
 {
   "name": "ExampleModule",
   "type": "clientscript",
-  "children": {
-    "script1": {
-      "type": "script",
+  "path": "main.lua",
+  "children": [
+    {
+      "name": "script1",
+      "type": "serverscript",
       "path": "flatname.lua",
       "children": {
         
       }
     },
-    "folder1": {
-      "type": "instance",
-      "instance_type": "Part",
-      "children": {
-        
-      }
-    }
-  }
+  ]
 }

@@ -1,6 +1,6 @@
 {
-  "name": "ExampleModule"
-  "type": "clientscript"
+  "name": "ExampleModule",
+  "type": "clientscript",
   "children": {
     "script1": {
       "type": "script",
@@ -11,7 +11,7 @@
     },
     "folder1": {
       "type": "instance",
-      "instance_type": "Part"
+      "instance_type": "Part",
       "children": {
         
       }

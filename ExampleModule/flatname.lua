@@ -1,0 +1,1 @@
+print("Narineun kkonip bi sairo, Hemaeeo dallineun i miro")

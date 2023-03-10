@@ -14,7 +14,7 @@
     {
       "name": "testtype",
       "type": "instance",
-      "instance_type": "Part",
+      "instance_type": "MeshPart",
       "values": [
         {"name": "RenderFidelity", "type": "eval", "value": "Enum.RenderFidelity.Precise"}
       ]

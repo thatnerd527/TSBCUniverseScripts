@@ -16,7 +16,7 @@
       "type": "instance",
       "instance_type": "MeshPart",
       "values": [
-        {"name": "RenderFidelity", "type": "eval", "value": "Enum.RenderFidelity.Precise"}
+        {"name": "TextureID", "type": "eval", "value": "\"\""}
       ]
     }
   ]

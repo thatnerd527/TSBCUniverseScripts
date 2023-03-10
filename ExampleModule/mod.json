@@ -10,6 +10,14 @@
       "children": [
         
       ]
+    },
+    {
+      "name": "testtype",
+      "type": "instance",
+      "instance_type": "Part",
+      "values": [
+        {"name": "RenderFidelity", "type": "eval", "value": "Enum.RenderFidelity.Precise"}
+      ]
     }
   ]
 }

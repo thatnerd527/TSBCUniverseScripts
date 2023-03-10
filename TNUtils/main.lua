@@ -123,9 +123,10 @@ local module = {
 		local copy = {}
 		for i,v in pairs(table1) do
 			if (i == item) then
-				continue
+				goto continue end
 			end
 			copy[i] = table1[i]
+      ::continue::
 		end
 		return copy
 	end,

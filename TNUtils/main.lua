@@ -122,11 +122,9 @@ local module = {
 	removefromtable2 = function(table1,item)
 		local copy = {}
 		for i,v in pairs(table1) do
-			if (i == item) then
-				goto down;
+			if (i ~= item) then
+				copy[i] = table1[i]
 			end
-			copy[i] = table1[i]
-      ::down::
 		end
 		return copy
 	end,

@@ -37,7 +37,7 @@ local module = {
 	tablelength=function (table)
 		local count = 0
 		for _,_ in pairs(table) do
-			count += 1
+			count = count + 1
 		end
 		return count
 	end,

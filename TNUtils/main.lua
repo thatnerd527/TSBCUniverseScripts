@@ -115,7 +115,7 @@ local module = {
 			if v == item or i == item then
 				table.remove(copy,index)
 			end
-			index += 1
+			index = index + 1
 		end 
 		return copy
 	end,

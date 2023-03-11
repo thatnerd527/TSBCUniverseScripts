@@ -1,0 +1,7 @@
+{
+  "name": "ExampleModule",
+  "type": "clientscript",
+  "path": "main.lua",
+  "children": [
+  ]
+}

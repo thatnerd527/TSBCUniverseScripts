@@ -1,0 +1,53 @@
+{
+  "name": "UnifiedClientGameFramework",
+  "type": "modulescript",
+  "path": "main.lua",
+  "children": [
+    {
+      "name": "Commands",
+      "type": "instance",
+      "instance_type": "Folder",
+      "children": [
+        {
+          "name": "fog",
+          "type": "modulescript",
+          "path": "Commands/fog.lua"
+        },
+        {
+          "name": "help",
+          "type": "modulescript",
+          "path": "Commands/help.lua"
+        },
+        {
+          "name": "setregionsystemstate",
+          "type": "modulescript",
+          "path": "Commands/setregionsystemstate.lua"
+        }
+      ]
+    },
+    {
+      "name": "Systems",
+      "type": "instance",
+      "instance_type": "Folder",
+      "children": [
+        {
+          "name": "PerformanceDebug",
+          "type": "modulescript",
+          "path": "Systems/perfdebug.lua",
+          "children": [
+            {
+              "name": "Initialize",
+              "type": "serverscript",
+              "path": "Systems/perfdebug.Init.lua"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Initialize",
+      "type": "clientscript",
+      "path": "init.lua"
+    }
+  ]
+}

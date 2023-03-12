@@ -1,0 +1,99 @@
+{
+  "name": "UnifiedGameFramework",
+  "type": "modulescript",
+  "path": "main.lua",
+  "children": [
+    {
+      "name": "Commands",
+      "type": "instance",
+      "instance_type": "Folder",
+      "children": [
+        {
+          "name": "daylightcycle",
+          "type": "modulescript",
+          "path": "Commands/daylightcycle.lua"
+        },
+        {
+          "name": "help",
+          "type": "modulescript",
+          "path": "Commands/help.lua"
+        },
+        {
+          "name": "settime",
+          "type": "modulescript",
+          "path": "Commands/settime.lua"
+        },
+        {
+          "name": "settimeratio",
+          "type": "modulescript",
+          "path": "Commands/settimeratio.lua"
+        },
+        {
+          "name": "timesys_setseconds",
+          "type": "modulescript",
+          "path": "Commands/timesys_setseconds.lua"
+        }
+      ]
+    },
+    {
+      "name": "Systems",
+      "type": "instance",
+      "instance_type": "Folder",
+      "children": [
+        {
+          "name": "Time",
+          "type": "modulescript",
+          "path": "Systems/Time.lua",
+          "children": [
+            {
+              "name": "HowManySecondsInADay",
+              "type": "instance",
+              "instance_type": "NumberValue",
+              "values": [
+                {
+                  "name": "Value",
+                  "type": "eval",
+                  "value": "86400"
+                }
+              ]
+            },
+            {
+              "name": "StartTime",
+              "type": "instance",
+              "instance_type": "NumberValue",
+              "values": [
+                {
+                  "name": "Value",
+                  "type": "eval",
+                  "value": "32400"
+                }
+              ]
+            },
+            {
+              "name": "TimeSpeedMultiplier",
+              "type": "instance",
+              "instance_type": "NumberValue",
+              "values": [
+                {
+                  "name": "Value",
+                  "type": "eval",
+                  "value": "10"
+                }
+              ]
+            },
+            {
+              "name": "Initialize",
+              "type": "serverscript",
+              "path": "Systems/Time.init.lua"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Initialize",
+      "type": "serverscript",
+      "path": "init.lua"
+    }
+  ]
+}

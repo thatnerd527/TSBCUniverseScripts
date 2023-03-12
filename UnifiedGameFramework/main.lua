@@ -1,7 +1,7 @@
 -- Define the command prefix
 local prefix = "!"
 local Utils = require(game:GetService("ReplicatedStorage"):WaitForChild("TNUtils"))
-local chat = game.Chat
+local chat = game["Chat"]
 local commands = {}
 local inited = false
 
@@ -10,9 +10,9 @@ function recursiveremove(children)
 		if v:IsA("ModuleScript") then
       print(require(v))
 			commands[v.Name] = {
-				run=require(v).execute,
-				shorthelp=require(v).syntax,
-				longhelp=require(v).description
+				run=require(v)["execute"],
+				shorthelp=require(v)["syntax"],
+				longhelp=require(v)["description"]
 			}
 			--print(v.Name.." welded")
 		end

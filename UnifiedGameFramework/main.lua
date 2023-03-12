@@ -7,8 +7,10 @@ local inited = false
 
 function recursiveremove(children) 
 	for i,v in pairs(children) do
-		if v:IsA("ModuleScript") then
-      print(require(v))
+		if v:IsA("ModuleScript") and not string.find(v.Name,".modloader-internal",0,true) then
+			print(require(v))
+			print("BREAK")
+			print(v.Name)
 			commands[v.Name] = {
 				run=require(v)["execute"],
 				shorthelp=require(v)["syntax"],
@@ -16,8 +18,9 @@ function recursiveremove(children)
 			}
 			--print(v.Name.." welded")
 		end
-
-		recursiveremove(v:GetChildren())
+		if not string.find(v.Name,".modloader-internal",0,true) then
+			recursiveremove(v:GetChildren())
+		end
 	end
 end
 
@@ -50,7 +53,14 @@ if (not inited) then
 			onChat(message,player)
 		end)
 	end)
+	for i,v in pairs(game.Players:GetChildren()) do
+		v.Chatted:Connect(function (message)
+			onChat(message,v)
+		end)
+	end
 	game:GetService("Chat"):RegisterChatCallback(Enum.ChatCallbackType.OnServerReceivingMessage,function (m)
+		--print("trigger")
+		--print(m.Message)
 		if (m.Message:sub(1, prefix:len()) == prefix) then
 			m.ShouldDeliver = false
 			return m

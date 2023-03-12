@@ -112,7 +112,8 @@ local module = {
 		end
 		local index = 0
 		for i,v in pairs(copy) do
-			if v == item or i == item then
+            if v == item or i == item then
+				
 				table.remove(copy,index)
 			end
 			index = index + 1

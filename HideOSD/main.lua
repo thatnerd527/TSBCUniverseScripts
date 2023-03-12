@@ -1,3 +1,4 @@
+print("eb s")
 script.Parent.Equipped:Connect(function()
     print("eb t")
 	game.Players.LocalPlayer.PlayerGui["Ragdoll & Get Up"].Enabled = true

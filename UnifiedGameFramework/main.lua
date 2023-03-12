@@ -8,6 +8,7 @@ local inited = false
 function recursiveremove(children) 
 	for i,v in pairs(children) do
 		if v:IsA("ModuleScript") then
+      print(require(v))
 			commands[v.Name] = {
 				run=require(v).execute,
 				shorthelp=require(v).syntax,

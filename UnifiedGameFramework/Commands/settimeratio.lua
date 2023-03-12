@@ -9,7 +9,7 @@ local module = {
 		end
 	end,
 	syntax=function (prefix)
-		return "(admin only) "..prefix..script.Name.." (true|false)"
+		return "(admin only) "..prefix..script.Name.." (time multipliter)"
 	end,
 	description=function (prefix)
 		return "This command will set time ratio / speed."

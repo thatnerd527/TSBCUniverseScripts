@@ -9,7 +9,7 @@ local module = {
 		end
 	end,
 	syntax=function (prefix)
-		return prefix..script.Name.." [command]"
+		return prefix..script.Name.." (true|false)"
 	end,
 	description=function (prefix)
 		return "This command will enable or disable fog."

@@ -8,9 +8,9 @@ local inited = false
 function recursiveremove(children) 
 	for i,v in pairs(children) do
 		if v:IsA("ModuleScript") and not string.find(v.Name,".modloader-internal",0,true) then
-			print(require(v))
-			print("BREAK")
-			print(v.Name)
+			--print(require(v))
+			--print("BREAK")
+			--print(v.Name)
 			commands[v.Name] = {
 				run=require(v)["execute"],
 				shorthelp=require(v)["syntax"],

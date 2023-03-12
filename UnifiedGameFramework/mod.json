@@ -84,7 +84,7 @@
             {
               "name": "Initialize",
               "type": "serverscript",
-              "path": "Systems/Time.init.lua"
+              "path": "Systems/Time.Init.lua"
             }
           ]
         }

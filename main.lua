@@ -5,3 +5,12 @@ print("TSBCUniverseScripts Running")
 print("TSBCUniverseScripts Launched")
 print("Version 1.0")
 
+local NetworkingCallbacks = {}
+NetworkingCallbacks.WeaponsSystem = nil
+
+function NetworkingCallbacks.WeaponFired()
+  print("11111")
+end
+
+NetworkingCallbacks.WeaponFired()
+

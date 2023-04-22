@@ -1,0 +1,17 @@
+{
+  "name": "WeaponsSystem",
+  "type": "instance",
+  "instance_type": "Folder",
+  "children": [
+      {
+        "name": "WeaponsSystem",
+        "type": "instance",
+        "instance_type": "Folder",
+        "children": [
+            {
+              
+            }
+        ]
+      }
+  ]
+}

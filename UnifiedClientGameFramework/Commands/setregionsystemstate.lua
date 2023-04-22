@@ -1,6 +1,6 @@
 local module = {
 	execute=function (command,args,authorized,player)
-		require(script.Parent.Parent.Systems.RegionSystem).setenabled(args)
+    game:GetService("Players").LocalPlayer.PlayerScripts.RegionSystem3.SetState:Fire(args)
 	end,
 	syntax=function (prefix)
 		return prefix..script.Name.." (true|false)"

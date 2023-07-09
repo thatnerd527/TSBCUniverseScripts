@@ -14,3 +14,4 @@ end
 
 NetworkingCallbacks.WeaponFired()
 
+print("Updated!")

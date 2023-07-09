@@ -32,6 +32,11 @@
           "name": "timesys_setseconds",
           "type": "modulescript",
           "path": "Commands/timesys_setseconds.lua"
+        },
+        {
+          "name": "godmode",
+          "type": "modulescript",
+          "path": "Commands/godmode.lua"
         }
       ]
     },

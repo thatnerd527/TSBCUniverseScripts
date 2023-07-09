@@ -24,7 +24,7 @@
           "path": "Commands/setregionsystemstate.lua"
         },
         {
-          "name": "godmod",
+          "name": "godmode",
           "type": "modulescript",
           "path": "Commands/godmode.lua"
         }
